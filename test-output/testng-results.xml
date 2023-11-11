@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-07T21:19:41 EST" name="Failed suite [Suite]" finished-at="2023-11-07T21:19:48 EST" duration-ms="7894">
+    <groups>
+      <group name="Master">
+        <method signature="TC_002_LoginTest.Test_Login()[pri:0, instance:testCases.TC_002_LoginTest@3e27ba32]" name="Test_Login" class="testCases.TC_002_LoginTest"/>
+      </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="TC_002_LoginTest.Test_Login()[pri:0, instance:testCases.TC_002_LoginTest@3e27ba32]" name="Test_Login" class="testCases.TC_002_LoginTest"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test started-at="2023-11-07T21:19:41 EST" name="Test(failed)" finished-at="2023-11-07T21:19:48 EST" duration-ms="7894">
+      <class name="testCases.TC_002_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_002_LoginTest@3e27ba32]" started-at="2023-11-07T21:19:41 EST" name="setup" finished-at="2023-11-07T21:19:46 EST" duration-ms="5596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Login()[pri:0, instance:testCases.TC_002_LoginTest@3e27ba32]" started-at="2023-11-07T21:19:46 EST" name="Test_Login" finished-at="2023-11-07T21:19:48 EST" duration-ms="1847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_LoginTest@3e27ba32]" started-at="2023-11-07T21:19:48 EST" name="tearDown" finished-at="2023-11-07T21:19:48 EST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_002_LoginTest -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
+</testng-results>
