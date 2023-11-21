@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterClass;
@@ -46,6 +47,11 @@ public class BaseClass {
 			ChromeOptions options=new ChromeOptions();
 			options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
 			driver=new ChromeDriver(options);
+		}
+		else if(br.equalsIgnoreCase("edge"))
+		{
+			logger.info("Launching Edge Browser..");
+			driver=new EdgeDriver();
 		}
 		else if(br.equalsIgnoreCase("firefox"))
 		{
@@ -100,7 +106,7 @@ public class BaseClass {
 				
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "//screenshots//" + tname + "_" + timeStamp + ".png";
+		String destination = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp + ".png";
 
 		try {
 			FileUtils.copyFile(source, new File(destination));
